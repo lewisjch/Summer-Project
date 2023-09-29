@@ -1,0 +1,29 @@
+######################################################################################
+#                                                                                    #
+## Python code designed for calculating the radius and density of protein clusters. ##
+#                                                                                    #
+######################################################################################
+
+## The first script, cluster_dr.py, calculates the most suitable value of dr
+
+## An example run of the first script is as follows: 
+
+%run cluster_dr.py dump.main_prpr1.4_prpo1.5_Nprot1000  cluster-data_prpr1.4_Nprot1000 1000 test.dat
+
+
+
+## The second script, cluster_values.py, uses a value of dr = 4 and outputs the radius & density of the cluster
+## and the density of the exterior space to different files.
+
+## An example run of the second script is as follows: 
+
+%run cluster_values.py [1.4,1.8,2.0] [1000,1732,3000,5196]
+
+
+
+## The final script, cluster_graphs.py, uses a value of dr = 4 and outputs the graphs of radius, droplet density 
+## and exterior density against the number of proteins, and also includes them all as log-log plots.
+
+## An example run of the final script is as follows: 
+
+%run cluster_graphs.py [1.4,1.8,2.0] [1000,1732,3000,5196]
