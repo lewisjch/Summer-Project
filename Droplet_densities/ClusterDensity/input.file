@@ -1,9 +1,0 @@
-#!/bin/bash
-
-for prpr in "1.4" "1.8" "2"
-do
-	for Nprot in "300" "548" "1000" "1732" "3000" "5196"
-	do
-		nohup %run cluster.py dump.main_prpr${prpr}_prpo1.5_Nprot${Nprot} cluster-data_prpr${prpr}_Nprot${Nprot} ${Nprot} density_prpr${prpr}_Nprot${Nprot} &
-	done
-done
